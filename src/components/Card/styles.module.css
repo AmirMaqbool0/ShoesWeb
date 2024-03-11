@@ -1,0 +1,58 @@
+.car_box{
+    width: 300px;
+    height: fit-content !important;
+    background:  rgb(234, 232, 232);
+    border-radius: 10px;
+    transition: all 0.5s;
+    
+}
+.car_box:hover{
+    transform: translateY(5px);
+}
+
+.card_logo img{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    overflow: hidden;
+     mix-blend-mode: multiply;
+     transition: all 0.5s;
+}
+.card_logo img:hover{
+    transform: scale(1.2);
+}
+.brand_name{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+.brand_name span{
+
+    font-size: 20px !important;
+    font-weight: 600;
+    color: black !important;
+    text-transform: capitalize;
+}
+.brand_name p{
+
+    font-size: 12px!important;
+    font-weight: 400;
+    color: black;
+}
+
+.brand_name button{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(249, 81, 81);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}

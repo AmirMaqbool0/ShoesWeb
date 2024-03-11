@@ -1,0 +1,115 @@
+.home_banner{
+    width: 100%;
+    height: 500px;
+    background:  rgb(234, 232, 232);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+.slider{
+    width: 400px;
+    height: 350px;
+    background:transparent;
+}
+.slider img{
+    width: 350px;
+    height: 300px;
+    object-fit: contain;
+    mix-blend-mode:multiply;
+   
+}
+.ome_banner_text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ome_banner_text h1{
+    font-size: 70px;
+    color:black;
+    font-weight: 600;
+}
+.ome_banner_text span{
+    width: 400px;
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+}
+.ome_banner_text button{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+@media screen and (max-width:850px) {
+    .slider{
+        width: 300px;
+        height: 250px;
+        background:transparent;
+        margin-bottom: 70px;
+    }
+    .slider img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        mix-blend-mode:multiply;
+    }
+    .ome_banner_text h1{
+        font-size: 50px;
+    }
+    .ome_banner_text span{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:750px){
+    .home_banner{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .slider{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:500px){
+    .ome_banner_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .ome_banner_text h1{
+        font-size: 30px;
+    }
+    .ome_banner_text span{
+        font-size: 12px;
+        text-align: center;
+    }
+    .ome_banner_text{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .ome_banner_text button{
+   width: 90px;
+   height: 30px;
+    }
+    .slider{
+        width: 200;
+    }
+    .slider img{
+        width: 100%;
+        height: 100%;
+    }
+    .home_banner{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+}
